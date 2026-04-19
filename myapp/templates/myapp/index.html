@@ -10,7 +10,7 @@
             </div> 
             <div class="mx-16 pt-15">
                 <div class="font-bold">{{item.item_name |upper}}</div>
-                <div  class=" text-green-700">{{item.item_price |add:50 | currency}}</div>
+                <div  class=" text-green-700">{{item.item_price | currency}}</div>
                 <div>POST BY:</t>{{item.user_name | lower}}</div>
                 <div >{{item.item_desc | upper | truncatechars:31}}</div>
                 <div>{{item.created_at|date:"d M Y"}}</div>
