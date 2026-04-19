@@ -21,7 +21,7 @@ cd food_django-_app
 python manage.py runserver
 
 ## 👨‍💻 Author
-Tarun Singh
+Tarun Singh 
 
 ## 📸 Screenshots
 
