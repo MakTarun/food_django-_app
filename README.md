@@ -26,3 +26,5 @@ Tarun Singh
 ## 📸 Screenshots
 
 ### Home Page
+<img width="750" height="350" alt="image" src="https://github.com/user-attachments/assets/ce137d0c-9e61-4f5e-add9-c45f6ff3254f" />
+
