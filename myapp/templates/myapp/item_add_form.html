@@ -1,0 +1,53 @@
+{% extends 'myapp/base.html' %}
+{% block body %}
+<div class="flex flex-col justify-center items-center min-h-screen p-10">
+    <h1 class="text-2xl font-bold mb-6">Add Item</h1>
+    {% if form.errors %}
+    <div class="bg-red-500 text-white p-3 rounded mb-4">
+    
+    {% for field in form %}
+        {% for error in field.errors %}
+            <p>{{ error }}</p>
+        {% endfor %}
+    {% endfor %}
+
+    {% for error in form.non_field_errors %}
+        <p>{{ error }}</p>
+    {% endfor %}
+
+</div>
+{% endif %}
+    
+    <form method="POST" class=" shadow-lg space-y-6 ">
+        {% csrf_token %}
+        {% if form.non_field_errors %}
+        <div class="bg-red-500 text-white p-2">
+            {% for error in form.non_field_errors%}
+                <p>{{ error }}</p>
+            {% endfor %}
+        </div>
+        {% endif %}
+        
+
+        {% for field in form %}
+        <div>
+            <label class="block mb-2 font-medium" for="">{{field.label}}</label>
+            <div class="border rounded p-8 p-7 w-106 h-5">
+                {{ field }}
+            </div>
+            {% if field.errors  and field.name != "item_price" %}
+            <div class="text-red-600 text-sm mt-1">
+                {% for error in field.errors %}
+                    <p>{{ error }}</p>
+                {% endfor %}
+            </div>
+            {% endif %}
+        </div>
+        {% endfor %}
+        <button class="bg-red-500 text-white px-4 py-2 w-full">Add Item</button>
+        </div>
+    </form>
+</div>
+{% endblock %}
+       
+
