@@ -28,3 +28,7 @@ Tarun Singh
 ### Home Page
 <img width="750" height="350" alt="image" src="https://github.com/user-attachments/assets/ce137d0c-9e61-4f5e-add9-c45f6ff3254f" />
 
+### Pagination
+<img width="759" height="399" alt="image" src="https://github.com/user-attachments/assets/f747ee21-614b-4319-8f58-76898da022db" />
+
+
