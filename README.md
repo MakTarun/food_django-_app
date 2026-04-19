@@ -36,6 +36,9 @@ Tarun Singh
 
 ### Detail page
 <img width="790" height="376" alt="image" src="https://github.com/user-attachments/assets/a91d50a3-1349-4e16-b2c6-006554a8f78c" />
+### Additen page
+<img width="772" height="375" alt="image" src="https://github.com/user-attachments/assets/9520fdf3-4d48-4284-a9a9-d0d1a38189b5" />
+
 
 
 
