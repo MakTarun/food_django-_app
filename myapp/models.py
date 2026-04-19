@@ -21,7 +21,7 @@ class Item(models.Model):
     item_name=models.CharField(max_length=100,db_index=True)
     item_desc=models.CharField()
     item_price=models.DecimalField(max_digits=6,decimal_places=2,db_index=True)
-    item_image=models.URLField(max_length=500,default="https://i.etsystatic.com/51974854/r/il/117305/6435886527/il_1080xN.6435886527_3k6v.jpg")
+    item_image=models.URLField(max_length=505,default="https://i.etsystatic.com/51974854/r/il/117305/6435886527/il_1080xN.6435886527_3k6v.jpg")
     is_available=models.BooleanField(default=True)
     created_at=models.DateTimeField(auto_now_add=True)
     is_deleted=models.BooleanField(default=False)
