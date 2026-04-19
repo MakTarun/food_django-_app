@@ -41,7 +41,7 @@ Tarun Singh
 <img width="772" height="375" alt="image" src="https://github.com/user-attachments/assets/9520fdf3-4d48-4284-a9a9-d0d1a38189b5" />
 
 ### Edit_details_of_page
-<img width="810" height="906" alt="image" src="https://github.com/user-attachments/assets/90025ae8-346c-4059-b799-48073317cc2b" />
+<img width="510" height="506" alt="image" src="https://github.com/user-attachments/assets/90025ae8-346c-4059-b799-48073317cc2b" />
 
 
 
