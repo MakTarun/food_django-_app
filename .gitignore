@@ -3,3 +3,7 @@ __pycache__/
 db.sqlite3
 .env
 *.log
+createdatabaseitems.txt
+dbconfig.txt
+installingpostgresmacos.txt
+logconfig.txt

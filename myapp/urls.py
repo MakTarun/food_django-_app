@@ -5,6 +5,9 @@ from django.views.decorators.cache import cache_page
 
 app_name='myapp'
 urlpatterns = [
+    # urls of api
+    path('item-json/',views.item_list_json,name='item_list_json'),
+    # urls for django app
     path('',views.index,name='index'),
     path('<int:id>/',views.detail,name='detail'),
     path('add/',views.create_Item,name='create_item'),
