@@ -5,8 +5,10 @@ from django.views.decorators.cache import cache_page
 
 app_name='myapp'
 urlpatterns = [
-    # urls of api
-    path('item-json/',views.item_list_json,name='item_list_json'),
+    # urls of DRF
+    path('api/items',views.item_list_api,name='item_list_api'),
+    #url of api-single-item_read
+    path("api/items/<int:pk>",views.item_detail_api,name='item_detail_api'),
     # urls for django app
     path('',views.index,name='index'),
     path('<int:id>/',views.detail,name='detail'),

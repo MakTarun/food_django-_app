@@ -14,12 +14,41 @@ import logging
 from django.shortcuts import get_object_or_404
 from django.utils import timezone
 from django.http import JsonResponse
+from .serializers import ItemSerializer
+from rest_framework.response import Response
+from rest_framework.decorators import api_view
 
 logger=logging.getLogger(__name__)
 
-def item_list_json(request):
-    items=Item.objects.all().values("id","item_name","item_desc","item_price")
-    return JsonResponse(list(items),safe=False)
+@api_view(["GET","POST"])
+def item_list_api(request):
+    if request.method=="GET":
+        items=Item.objects.all()
+        serializer=ItemSerializer(items,many=True)
+        return Response(serializer.data)
+    elif request.method=="POST":
+        serializer=ItemSerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+
+@api_view(["GET","PUT","DELETE"])
+def item_detail_api(request,pk):
+    item=Item.objects.get(pk=pk)
+    if request.method=="GET":
+        serializer=ItemSerializer(item)
+        return Response(serializer.data)
+    elif request.method=="PUT":
+        serializer=ItemSerializer(item,data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+    elif request.method=="DELETE":
+        item.delete()
+        return Response({"message":"Item deleted"})
+
+
+
 
 # Create your views here.
 # @login_required
