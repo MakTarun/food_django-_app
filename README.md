@@ -1,4 +1,4 @@
-# 🍽️ Food Django App
+# 🍽️ Food Menu App
 
 ## 📌 Overview
 This is a Django-based web application for managing food items and user profiles. Users can add, update, delete, and view food items.
